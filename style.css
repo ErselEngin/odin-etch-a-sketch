@@ -1,4 +1,9 @@
-#mainContent{
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#mainContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,11 +11,11 @@
     gap: 4px;
 }
 
-#title{
+#title {
     text-align: center;
 }
 
-.grid{
+.grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -20,11 +25,11 @@
 }
 
 .column,
-.row{
+.row {
     flex: 1 1 auto;
 }
 
-.column{
+.column {
     display: flex;
     text-align: center;
     gap: 1px;
@@ -32,6 +37,24 @@
     justify-content: center;
 }
 
-.row{
+.row {
     border: 1px black solid;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 64px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 700;
 }
