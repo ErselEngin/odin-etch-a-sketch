@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: teal;
 }
 
 #mainContent {
@@ -8,20 +9,40 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: 4px;
+    width: 600px;
+    border-radius: 64px;
+    background-color: darkorange;
 }
 
 #title {
     text-align: center;
+    font-family: cursive, 'Courier New', Courier, monospace;
+}
+
+#rangeSlider {
+    display: flex;
+    gap: 10px;
+}
+
+#sliderOutput {
+    font-size: 20px;
+    font-family: fantasy, 'Courier New', Courier, monospace;
+    width: 20px;
+}
+
+#size {
+    cursor: pointer;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 50px;
     width: 512px;
     height: 512px;
+    background-color: white;
 }
 
 .column,
@@ -32,13 +53,12 @@ body {
 .column {
     display: flex;
     text-align: center;
-    gap: 1px;
     flex-basis: 51%;
     justify-content: center;
 }
 
 .row {
-    border: 1px black solid;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
 }
 
 footer {
@@ -57,4 +77,20 @@ footer div {
 footer a {
     text-decoration: none;
     font-weight: 700;
+    color: white;
+}
+
+#mainContent button{
+    font-size: 20px;
+    font-family: fantasy, 'Courier New', Courier, monospace;
+    border-radius: 8px;
+}
+
+#boardBottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    width: 600px;
 }

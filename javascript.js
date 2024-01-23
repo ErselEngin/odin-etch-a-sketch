@@ -1,15 +1,15 @@
-const main = document.querySelector('#mainContent');
-const newBoard = document.querySelector('#createGrid');
+const board = document.querySelector('#board');
+const newBoard = document.querySelector('#size');
 const clearBoard = document.querySelector('#clearGrid');
 const gridSize = document.querySelector('#size');
 
 let grid = document.createElement('div');
 grid.className = "grid";
-main.appendChild(grid);
+board.appendChild(grid);
 
 createGrid(16);
 
-newBoard.addEventListener('click', () => {
+newBoard.addEventListener('mouseup', () => {
     if (gridSize.value != null && gridSize.value != "") {
 
         grid.innerHTML = "";
@@ -38,7 +38,7 @@ function createGrid(size) {
                 column.appendChild(row);
 
                 row.addEventListener('mouseover', () => {
-                    row.setAttribute('style', "background-color: black;")
+                    row.setAttribute('style', "background-color: gray;")
                 })
             }
         }

@@ -10,12 +10,19 @@
 </head>
 
 <body>
-    <h1 id="title">Etch a Sketch</h1>
+
     <div id="mainContent">
-        <input id="size" placeholder="Grid Size">
-        <div>
-            <button id="createGrid">Create Board</button>
-            <button id="clearGrid">Clear Board</button>
+        <h1 id="title">Etch a Sketch</h1>
+        <div id="board"></div>
+        <div id="boardBottom">
+            <div id="rangeSlider">
+                <output id="sliderOutput">16</output>
+                <input type="range" value="16" min="1" max="64" id="size"
+                    oninput="this.previousElementSibling.value = this.value">
+            </div>
+            <div>
+                <button id="clearGrid">Clear</button>
+            </div>
         </div>
     </div>
 
